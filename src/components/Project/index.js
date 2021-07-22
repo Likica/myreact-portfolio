@@ -21,7 +21,74 @@ function Projects() {
     ]);
     return (
         <div>
+            <section id="projects">
+                <div id="work" className="work-wrapper">
+                    <div className="work-item work-title">
+                        <h2>Work Projects</h2>
+                    </div>
+                    <div>
 
+                        <h3>{capitalizeFirstLetter(projects[0].name)}</h3>
+                        <h4>{projects[0].description}</h4>
+                        <h5>{projects[0].tools}</h5>
+
+                        <span>
+
+                        </span>
+                    </div>
+
+
+                    <div >
+                        <h3>{capitalizeFirstLetter(projects[2].name)}</h3>
+                        <h4>{projects[2].description}</h4>
+                        <h5>{projects[2].tools}</h5>
+
+                        <span>
+
+                        </span>
+                    </div>
+
+                    <div >
+                        <h3>{capitalizeFirstLetter(projects[0].name)}</h3>
+                        <h4>{projects[0].description}</h4>
+                        <h5>{projects[0].tools}</h5>
+
+                        <span>
+
+                        </span>
+                    </div>
+
+                    <div >
+                        <h3>{capitalizeFirstLetter(projects[0].name)}</h3>
+                        <h4>{projects[0].description}</h4>
+                        <h5>{projects[0].tools}</h5>
+
+                        <span>
+
+                        </span>
+                    </div>
+
+                    <div >
+                        <h3>{capitalizeFirstLetter(projects[1].name)}</h3>
+                        <h4>{projects[1].description}</h4>
+                        <h5>{projects[1].tools}</h5>
+
+                        <span>
+
+                        </span>
+                    </div>
+
+                    <div >
+                        <h3>{capitalizeFirstLetter(projects[1].name)}</h3>
+                        <h4>{projects[1].description}</h4>
+                        <h5>{projects[1].tools}</h5>
+
+                        <span>
+
+                        </span>
+                    </div>
+                </div>
+            </section>
         </div >
     );
 }
