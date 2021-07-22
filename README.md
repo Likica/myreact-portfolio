@@ -1,6 +1,6 @@
-# my_tech_blog
+# myreact-portfolio
   ### By Likica * [Email me](mailto:fahrija_wyroski@live.com) * 
-  * [Deployed Appplication](https://www.github.com/likica.io/READMEgenerator)
+  * [Deployed Appplication](https://likica.github.io/myreact-portfolio/)
  
   ## Table of contents
   * [Description](#Description)
