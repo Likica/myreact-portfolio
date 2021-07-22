@@ -35,3 +35,308 @@ flex-wrap: wrap;
 top: 0;
 z-index: 9999;
 }
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--primary-color);
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+header a {
+  text-decoration: none;
+  color:  var(--primary-color);
+}
+
+.nav-el {
+  margin: 7px 0;
+}
+.nav-el ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-el ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-el ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+p {
+      float: right;
+      margin-left: 25px;
+      font-size: 20px;
+      font-style: oblique;
+  }
+
+
+/*Header styling end*/
+
+/* Hero section style start*/
+
+.hero {
+  background: rgb(228, 151, 97);
+  /* background-image: url(./images/CodeS.png); */
+  /* background-size: contain;
+  background-repeat:round;
+  background-position: center; */
+  display: flex;
+  /* text-align: right; */
+  align-items: flex-end;
+  padding: 2% 6%;
+  flex-direction: row; 
+}
+
+.hero div {
+  flex: 0 0 90%;
+}
+
+.hero-subtitle {
+  text-align: left;
+  color:orange;
+}
+
+section {
+  padding: 25px 55px;
+  }
+.intro-wrapper {
+      text-indent: 15%;
+      align-content: space-around;
+      
+  }
+.about-me-wrapper {
+  text-indent: 15%;
+  align-content: space-around;
+}
+/* Resize image on portfolio*/
+img {
+  max-width: 15%;
+  height: auto;
+}
+
+/* Hero section style end/
+
+/*Footer Styling Start*/
+/* add sematic code, box resize and Contact links alignment and positioning */
+footer {
+padding: 0px 15px;
+
+}
+
+footer h3 {
+  text-align: left;
+  font-size: 25px;
+  color: purple;
+}
+
+footer a {
+  color:  var(--tertiary-color);
+  padding: 20px 35px;
+}
+
+/* Align links to the right */
+address {
+  background-color: slategrey;
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+
+/* Footer Styling End */
+
+/* Work - Projects section styling start */
+.work-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  justify-content: space-between;
+}
+
+.work-item {
+  padding-top: 75px;
+  font-size: 25px;
+  text-align:left;
+  padding-right: 75px;
+  border-right: 2px solid var(--tertiary-color);
+}
+
+/* .work-title{
+    padding-top: 25px;
+    padding-bottom: 25px;
+} */
+
+.work-item-project.react-portfolio{ 
+  
+  /* background-image: url(./images/react-portfolio.png); */
+  background-size: cover;
+  display:flex; 
+  align-items:center;
+  padding-left: 200px;
+  padding-bottom: 200px;
+  text-align:center;
+  color: rgb(11, 14, 11);
+  border: .25vw solid var(--primary-color);
+}
+
+.work-item-project.Horiseon {
+ 
+  /* background-image: url(./images/Horiseon.png); */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  padding-bottom: 200px;
+  text-align: left;
+  color: rgb(84, 219, 50);
+  border: .25vw solid var(--primary-color);
+}
+.work-item-project.workday-scheduler {
+  
+  /* background-image: url(./images/WDS_landing_pg.png); */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: rgb(84, 219, 50);
+  border: .25vw solid var(--primary-color);
+}
+.work-item-project.readme-generator {
+  
+  /* background-image: url(./images/readme-generator.png); */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: rgb(84, 219, 50);
+  border: .25vw solid var(--primary-color);
+}
+.work-item-project.myreact-portfolio {
+  
+  /* background-image: url(./images/kitty_transl.png); */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: rgb(84, 219, 50);
+  border: .25vw solid var(--primary-color);
+}
+
+.work-item-project.roast-me {
+  
+  /* background-image: url(./images/roast_me.png); */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: rgb(84, 219, 50);
+  border: .25vw solid var(--primary-color);
+}
+
+
+/* Media Queries Start */
+/* Media Query for 980px screen */
+@media screen and (max-width: 980px) {
+header {
+  padding-bottom: 0;
+  justify-content: center;
+  position: relative;
+  }
+}
+header h1 {
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul {
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+header nav ul li a {
+  font-size: 20px;
+}
+
+footer h2, footer div {
+  text-align: center;
+  width: 100%;
+}
+
+.section-title {
+  width: 80%;
+}
+
+.contact-info iframe {
+  flex: 1 100%;
+}
+
+/* Media Query for 768px screen */
+@media screen and (max-width: 768px) {
+  section {
+      padding: 30px 15px;
+      }
+  
+  /* Media Query for 575px screen */
+  @media screen and (max-width: 575px) {
+  .hero-form button {
+      width: 100%;
+      }
+  
+  .section-title {
+      width: 95%;
+  }
+  
+  .contact-info {
+      text-align: center;
+  }
+  
+  .contact-info > * {
+      flex: 0 100%;
+  }
+  }
+  };
+  
+  /* Media Queries End */
+
+/* Hover effect Header - to fade color/hnage color of text once hovering over the project*/
+.nav-effect a:hover { 
+  color: var(--tertiary-color);
+  font-weight: bold;
+}
+
+/* Hover effect for Work Projects - to fade color/hnage color of text once hovering over the project*/
+.work-container div:hover { 
+  mix-blend-mode:lighten;
+  text-shadow: 0px 0px 20px var(--secondary-color);
+  transform: scale(1.5);
+  margin-right: calc(5% + 10px);
+  margin-left: 5%;
+}
+
+/* Footer hover start - to fade color/hnage color of text once hovering over the project*/
+.footer a:hover {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-shadow: 0px 0px 20px var(--secondary-color);
+};
+/* Footer Hover end */
