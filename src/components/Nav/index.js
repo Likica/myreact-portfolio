@@ -1,56 +1,34 @@
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import React from 'react';
 
-function Nav(props) {
-    const {
-        categories = [],
-        setCurrentCategory,
-        contactSelected,
-        currentCategory,
-        setContactSelected,
-    } = props;
+function Nav() {
 
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentCategory.name);
-    }, [currentCategory]);
 
     return (
-        <header className="flex-row px-1">
-            <h2>
-                <span class="span-background-title">
-                    <h1>Fahrija Wyroski</h1>
-                </span>
-            </h2>
+        <div className='nav-el'>
             <nav>
-                <ul className="nav-effect">
-                    <li className="mx-2">
-                        <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-                            About me
-            </a>
-                    </li>
-                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                        <span onClick={() => setContactSelected(true)}>Contact</span>
-                    </li>
-                    {categories.map((category) => (
-                        <li
-                            className={`mx-1 ${currentCategory.name === category.name && !contactSelected && 'navActive'
-                                }`}
-                            key={category.name}
-                        >
-                            <span
-                                onClick={() => {
-                                    setCurrentCategory(category);
-                                    setContactSelected(false);
-                                }}
-                            >
-                                {capitalizeFirstLetter(category.name)}
-                            </span>
+                <span>
+                    <ul className="nav-effect">
+                        <li>
+                            <a href="#about-me">About Me</a>
                         </li>
-                    ))}
-                </ul>
+                        <li>
+                            <a href="#work">Work</a>
+                        </li>
+                        <li>
+                            <a href="#contact-form">Contact Me</a>
+                        </li>
+
+                        <li>
+                            <a href='#resume'
+                            // onClick="window.open(https://www.linkedin.com/in/fahrija-w-92a4b8128)"
+                            >Resume</a>
+                        </li>
+                    </ul>
+                </span>
             </nav>
-        </header>
-    );
+
+        </div>
+    )
 }
 
 export default Nav;
