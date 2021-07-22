@@ -24,7 +24,7 @@
   ##### [Back to Table of Contents](#Table-of-Contents)
   - Use URL to navigate to page
      
-    <img id="Landing-Pg-Snapshot" src="src/assets/portfolio_lp.png" alt="Professional Portfolio"/>
+    <img id="Landing-Pg-Snapshot" src="/portfolio_lp.png" alt="Professional Portfolio"/>
 
   ## Usage Instructions
   ##### [Back to Table of Contents](#Table-of-Contents)
@@ -32,8 +32,8 @@
 * Use top navigation panel to access sections of the webpage such as About Me, Work, Contact Me and my complete Resume.
 * Use bottom links for contacting via emal, phone or social media LinkedIn.
 
-<img id="Header-Nav" src="src/assets/Header-Nav.png" alt="Header Navigation Links"/>
-<img id="Footer-Nav" src="src/assets/Footer-Nav.png" alt="Footer Navigation Links"/>
+<img id="Header-Nav" src="/Header-Nav.png" alt="Header Navigation Links"/>
+<img id="Footer-Nav" src="/Footer-Nav.png" alt="Footer Navigation Links"/>
 
   ## Contributing
   ##### [Back to Table of Contents](#Table-of-Contents)
